@@ -38,4 +38,4 @@ def main(request):
         if 'items' in videos_data:
             videos = [item['snippet'] for item in videos_data['items']]
 
-    return render(request, 'main_page/main.html', {'statistics': statistics, 'videos': videos})
+    return render(request, 'index.html', {'statistics': statistics, 'videos': videos})
